@@ -7,8 +7,12 @@
 </head>
 <body>
     <script>
-        function getAnimalData(){
-            alert("clicked")
+        async function getAnimalData(){
+        const response = await fetch("address");
+        const finalData = await response.json();
+        console.log(finalData);
+        
+
         }
     </script>
     <button onclick="getAnimalData()">Get animal data</button>
