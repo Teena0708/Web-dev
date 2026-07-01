@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 app.use(express.json());
-mongoose.connect("Connection string");
+mongoose.connect("Connection String");
 const User = mongoose.model('Users', { name: String, email: String, password: String });
 
 app.post('/signUp', async function(req, res) {
