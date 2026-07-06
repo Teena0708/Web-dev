@@ -3,7 +3,7 @@
 const jwt = require("jsonwebtoken");
 const zod = require("zod");
 
-const jwtpassword = "mysecretpasswords";
+const jwtpassword = "mysecretpasswordss";
 
 const emailSchema = zod.string().email();
 const passwordSchema = zod.string().min(6);
