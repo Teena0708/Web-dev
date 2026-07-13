@@ -13,7 +13,7 @@ function adminMiddleware(req, res, next) {
             }
         })
         .catch(err => {
-            res.status(500).json({ message: 'Internal server error occured' });
+            res.status(500).json({ message: 'Internal server error occur' });
         });
 }
 module.exports = adminMiddleware;
