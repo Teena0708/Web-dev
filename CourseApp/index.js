@@ -1,13 +1,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-const adminRoutes = require('./routes/admin');
-const userRoutes = require('./routes/user');
+const adminRouter = require('./routes/admin');
+const userRouter = require('./routes/user');
 
 
 app.use(bodyParsor.json());
-app.use('/admin', adminRoutes);
-app.use('/user', userRoutes);   
+app.use('/admin', adminRouter);
+app.use('/user', userRouter);   
 
 
 const PORT = 3000;
