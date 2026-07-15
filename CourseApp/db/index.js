@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("your-mongodb-url");
+mongoose.connect("your-Mongodb-url");
 
 
 const AdminSchema = new mongoose.Schema({

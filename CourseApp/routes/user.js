@@ -56,7 +56,7 @@ const user = await User.findone({
 console.log(user.purchasedCourses);
 const courses = await Course.find({
     _id: {
-    "$in":user.purchasedCourses
+    "$in":user.purchasedCourses}
 });
 
 res.json({
